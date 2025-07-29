@@ -1,0 +1,212 @@
+{
+  "type": "urn:dx:cat:Success",
+  "title": "Success",
+  "totalHits": 1,
+  "results": [
+    {
+      "@context": "https://iudx.org/context/iudx-context.jsonld",
+      "type": [
+        "iudx:Resource"
+      ],
+      "id": "a730fe8e-b037-4a76-bf01-0468ff60084c",
+      "name": "kannur_road_segment_info",
+      "label": "Kannur Road Segment Information",
+      "description": "This dataset provides information about road segments in Kannur, including road ID, name, length, width, and location.",
+      "tags": [
+        "transportation",
+        "roads",
+        "kannur",
+        "geospatial",
+        "osm"
+      ],
+      "apdURL": "acl-apd.geospatial.org.in",
+      "crs": "EPSG:4326",
+      "datum": "WGS84",
+      "location": {
+        "address": "Kannur, Kerala, India",
+        "type": "Place"
+      },
+      "accessPolicy": "OPEN",
+      "resourceType": "OGC",
+      "ogcResourceInfo": {
+        "ogcResourceAPIs": [
+          "FEATURES"
+        ],
+        "geometryType": "LineString"
+      },
+      "provider": "",
+      "resourceServer": "",
+      "resourceGroup": "",
+      "dataSample": {
+        "type": "Feature",
+        "properties": {
+          "roadID": "5272",
+          "roadName": "GREEN VILLA ROAD TO CHAITHRAM HOUSE",
+          "carriagewayLength": 0.095454461114818,
+          "carriagewayWidth": 3,
+          "rightOfWayWidth": 4,
+          "roadStartPoint": "GREEN VILLA ROAD",
+          "roadEndPoint": "CHAITHRAM HOUSE",
+          "district": "KANNUR",
+          "ulbName": "KANNUR MUNICIPAL CORPORATION",
+          "roadClass": "OTHER_PUBLIC_ROAD",
+          "pedestrianPathPlacement": "NOT_AVAILABLE",
+          "pedestrianPathRightWidth": 0,
+          "pedestrianPathLeftWidth": 0,
+          "totalPedestrianPathWidth": 0,
+          "agency_name": "CORPORATION",
+          "roadMaterial": "TAR",
+          "pedestrianPathMaterial": null
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            75.349944,
+            11.892856
+          ]
+        },
+        "filename": "kannur_road_segment_info.json"
+      },
+      "dataDescriptor": {
+        "@context": "https://iudx.org/context/iudx-context.jsonld",
+        "type": [
+          "iudx:DataDescriptor"
+        ],
+        "dataDescriptorLabel": "Data Descriptor for Kannur Road Segment Information",
+        "description": "Describes the data structure of the Kannur Road Segment Information dataset.",
+        "geometry": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Geographical representation corresponding to this observation.",
+          "dataSchema": "iudx:LineString"
+        },
+        "roadID": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Unique identifier for the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "roadName": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Name of the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "carriagewayLength": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Length of the carriageway.",
+          "dataSchema": "iudx:Number"
+        },
+        "carriagewayWidth": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Width of the carriageway.",
+          "dataSchema": "iudx:Number"
+        },
+        "rightOfWayWidth": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Width of the right of way.",
+          "dataSchema": "iudx:Number"
+        },
+        "roadStartPoint": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Name of the starting point of the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "roadEndPoint": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Name of the ending point of the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "district": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "District where the road segment is located.",
+          "dataSchema": "iudx:Text"
+        },
+        "ulbName": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Name of the urban local body responsible for the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "roadClass": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Classification of the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "pedestrianPathPlacement": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Placement of pedestrian paths.",
+          "dataSchema": "iudx:Text"
+        },
+        "pedestrianPathRightWidth": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Width of the pedestrian path on the right side.",
+          "dataSchema": "iudx:Number"
+        },
+        "pedestrianPathLeftWidth": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Width of the pedestrian path on the left side.",
+          "dataSchema": "iudx:Number"
+        },
+        "totalPedestrianPathWidth": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Total width of the pedestrian path.",
+          "dataSchema": "iudx:Number"
+        },
+        "agency_name": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Name of the agency responsible for the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "roadMaterial": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Material used for the road segment.",
+          "dataSchema": "iudx:Text"
+        },
+        "pedestrianPathMaterial": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Material used for the pedestrian path.",
+          "dataSchema": "iudx:Text"
+        }
+      },
+      "itemStatus": "ACTIVE",
+      "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+      "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+      "instance": "surveyofindia",
+      "itemCreatedAt": "2025-07-09T13:45:01.786492+0530"
+    }
+  ],
+  "detail": "Success: Item generated Successfully"
+}

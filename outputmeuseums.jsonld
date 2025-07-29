@@ -1,0 +1,58 @@
+[
+  {
+    "@context": "https://schema.org/",
+    "@id": "https://museums.calderdale.gov.uk/visit/bankfield-museum",
+    "@type": [
+      "Museum",
+      "Place"
+    ],
+    "name": "Bankfield Museum",
+    "location": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.732562,
+      "longitude": -1.863383
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@id": "https://museums.calderdale.gov.uk/visit/duke-wellingtons-regiment-museum",
+    "@type": [
+      "Museum",
+      "Place"
+    ],
+    "name": "Duke of Wellington's Regiment Museum",
+    "location": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.732562,
+      "longitude": -1.863383
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@id": "https://museums.calderdale.gov.uk/visit/shibden-hall",
+    "@type": [
+      "Museum",
+      "Place"
+    ],
+    "name": "Shibden Hall Museum",
+    "location": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.728265,
+      "longitude": -1.839966
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@id": "https://museums.calderdale.gov.uk/visit/smith-art-gallery",
+    "@type": [
+      "ArtGallery",
+      "Place"
+    ],
+    "name": "Smith Art Gallery",
+    "location": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.704014,
+      "longitude": -1.786128
+    }
+  }
+]

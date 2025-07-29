@@ -1,0 +1,62 @@
+{
+  "@type": "iudx:DataDescriptor",
+  "description": "Metadata for a geographic feature",
+  "properties": {
+    "S.No.": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Block": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Panchayat": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Village": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Habitation": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Sourcetype": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "Sourcetypecategory": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Text"
+    },
+    "geometry": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Point"
+    }
+  }
+}

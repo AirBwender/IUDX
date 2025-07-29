@@ -1,0 +1,13 @@
+{
+  "alertType": "RED_LIGHT_VIOLATION_DETECTION",
+  "location": {
+    "coordinates": [77.595183, 12.910289],
+    "type": "Point"
+  },
+  "cameraUsage": "ANPR",
+  "junctionName": "JPnagar-8thmain-9thcross",
+  "vehicleType": "Motorbike",
+  "license_plate": "915cb0f52443154dc7990ee84a1beb846cd44447",
+  "observationDateTime": "2024-02-14T15:24:07+05:30",
+  "filename": "bengaluru_traffic_violations.json"
+}

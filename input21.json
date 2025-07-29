@@ -1,0 +1,10 @@
+{
+  "emergencyVehicleType": "AMBULANCE",
+  "license_plate": "GJ06G6385",
+  "observationDateTime": "2021-07-25T19:46:04+05:30",
+  "location": {
+    "type": "Point",
+    "coordinates": [73.171237, 22.309942]
+    },
+  "serviceOnDuty": "YES"
+}

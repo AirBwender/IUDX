@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "S.No.": "1033",
+    "Block": "Vizianagaram",
+    "Panchayat": "Jonnavalasa",
+    "Village": "Jonnavalasa",
+    "Habitation": "Jonnavalasa",
+    "Sourcetype": "Deep Tubewell",
+    "Sourcetypecategory": "Ground Water"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      83.365144,
+      18.093153
+    ]
+  },
+  "filename": "Location_Of_tubewells_Haryana"
+}

@@ -1,0 +1,125 @@
+{
+      "@context": "https://voc.iudx.org.in/",
+      "id": "7b5357f2-1abc-43b7-b6ae-2027a8443b47",
+      "type": [
+        "iudx:Resource",
+        "iudx:TransitManagement"
+      ],
+      "name": "indore-stops-info",
+      "label": "Bus Stop Info for Public Transit Buses in Indore City",
+      "description": "Publishes information about public transit bus stops such as stop locations in Indore city.",
+      "tags": [
+        "bus stop",
+        "BRTS corridor",
+        "city bus",
+        "stop details",
+        "stop name",
+        "stop location",
+        "public transit",
+        "itms"
+      ],
+      "accessPolicy": "SECURE",
+      "apdURL": "acl-apd.iudx.org.in",
+      "provider": "2840eba3-e977-4d3a-8c85-5c60adf9492e",
+      "resourceServer": "ab311420-7d84-4a0a-9fdb-c811be588589",
+      "resourceGroup": "ad71f7c5-fe85-4f94-a931-acbbb463ea0a",
+      "resourceType": "GSLAYER",
+      "iudxResourceAPIs": [
+        "ATTR",
+        "TEMPORAL",
+        "SPATIAL"
+      ],
+      "dataDescriptor": {
+        "@context": "https://voc.iudx.org.in/",
+        "type": [
+          "iudx:DataDescriptor",
+          "iudx:TransitManagement"
+        ],
+        "description": "Data attribute details of public transit bus stops locations in Indore city.",
+        "dataDescriptorLabel": "Data Attribute Details for Public Transit Bus-Stops in Indore City",
+        "stop_id": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Text",
+          "description": "The unique ID of the bus stop corresponding to this observation."
+        },
+        "stop_code": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Text",
+          "description": "The unique code of the bus stop corresponding to this observation."
+        },
+        "stop_name": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Text",
+          "description": "The name of the public transit bus stop corresponding to this observation."
+        },
+        "stop_desc": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Text",
+          "description": "The description of the type of stop corresponding to this observation."
+        },
+        "location": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Point",
+          "description": "The physical coordinates of the bus stop corresponding to this observation."
+        },
+        "observationDateTime": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "The timestamp at which the packet is pushed into the data exchange.",
+          "dataSchema": "iudx:DateTime"
+        }
+      },
+      "dataSample": {
+        "stop_id": "38",
+        "stop_code": "RAJIV GANDHI",
+        "stop_name": "Rajiv Gandhi",
+        "stop_desc": "BRTS Corridor",
+        "location": {
+          "type": "Point",
+          "coordinates": [75.8582, 22.68392]
+        },
+        "observationDateTime": "2024-08-27T15:21:30+05:30"
+      },
+      "dataSampleFile": [
+        {
+          "hasObject": "https://fs-sample-file-bucket.s3.ap-south-1.amazonaws.com/public-access/indore/indore-stops-info.json",
+          "name": "Indore Bus Stop Info for Public Transit Buses in sample",
+          "description": "Sample file for Bus Stop Info for Public Transit Buses in Indore city.",
+          "relationType": "REL_FILE"
+        }
+      ],
+      "location": {
+        "type": "Place",
+        "address": "Indore, Madhaya Pradesh",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [75.792175, 22.796246],
+              [75.752865, 22.676815],
+              [75.82108, 22.606387],
+              [75.909336, 22.639472],
+              [75.944793, 22.75467],
+              [75.885827, 22.818273],
+              [75.792175, 22.796246]
+            ]
+          ]
+        }
+      },
+      "itemStatus": "ACTIVE",
+      "instance": "indore",
+      "ownerUserId": "0d27fb16-1466-48f3-9dcb-14bc37fc23ee",
+      "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+      "itemCreatedAt": "2024-09-11T03:08:15+0530"
+}

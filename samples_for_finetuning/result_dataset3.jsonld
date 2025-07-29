@@ -1,0 +1,134 @@
+{
+      "@context": "https://voc.iudx.org.in/",
+      "id": "f23df9b1-e663-409e-9492-ab440d086767",
+      "id_bck": "datakaveri.org/fb0924bef803e220e0d0bc8ceaf0a1f999442f32/rs.iudx.org.in/bengaluru-emergency-vehicles/ambulance-live",
+      "type": [
+        "iudx:Resource",
+        "iudx:EmergencyVehicle"
+      ],
+      "name": "ambulance-live",
+      "label": "Realtime Location Info of Ambulances in Bengaluru City.",
+      "description": "The realtime information like emergency vehicle location and on call status of ambulances in Bengaluru city at an interval of 10 seconds.",
+      "tags": [
+        "ambulance",
+        "motor cycle ambulance",
+        "bike ambulance",
+        "emergency vehicle",
+        "license plate",
+        "sos",
+        "on call",
+        "emergency service",
+        "patient",
+        "hospital",
+        "on duty",
+        "help",
+        "service on duty"
+      ],
+      "accessPolicy": "SECURE",
+      "apdURL": "acl-apd.iudx.org.in",
+      "provider": "b2c4c7f4-d870-42e4-b1c4-6438a806011a",
+      "provider_bck": "datakaveri.org/fb0924bef803e220e0d0bc8ceaf0a1f999442f32",
+      "resourceServer": "ab311420-7d84-4a0a-9fdb-c811be588589",
+      "resourceServer_bck": "datakaveri.org/27e503da0bdda6efae3a52b3ef423c1f9005657a/rs.iudx.org.in",
+      "resourceGroup": "c6e27321-b0f3-43c3-9e70-3512b5ed1638",
+      "resourceGroup_bck": "datakaveri.org/fb0924bef803e220e0d0bc8ceaf0a1f999442f32/rs.iudx.org.in/bengaluru-emergency-vehicles",
+      "resourceType": "MESSAGESTREAM",
+      "iudxResourceAPIs": [
+        "ATTR",
+        "TEMPORAL",
+        "SPATIAL"
+      ],
+      "dataDescriptor": {
+        "@context": "https://voc.iudx.org.in/",
+        "type": [
+          "iudx:DataDescriptor",
+          "iudx:EmergencyVehicle"
+        ],
+        "dataDescriptorLabel": "Data descriptor for ambulance vehicle details in Bengaluru city.",
+        "description": "Ambulances in Bengaluru city.",
+        "emergencyVehicleType": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "The vehicle type of the emergency vehicle corresponding to this observation,which can be AMBULANCE or MOTORCYCLE AMBULANCE in this instance.",
+          "dataSchema": "iudx:Text"
+        },
+        "license_plate": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Registration number of the ambulance vehicle corresponding to this observation.",
+          "dataSchema": "iudx:Text"
+        },
+        "serviceOnDuty": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Describes if the ambulance corresponding to this observation is attending to a call or not. This field is marked YES if the ambulance is attending to a call and marked NO otherwise.",
+          "dataSchema": "iudx:Text"
+        },
+        "observationDateTime": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Last reported time of observation.",
+          "dataSchema": "iudx:DateTime"
+        },
+        "location": {
+          "description": "Physical coordinates of the ambulance vehicle at the last tracked time of observation.",
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Point"
+        },
+        "vehicleSupportType": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Life support capability provided by the ambulance corresponding to this observation. The field value can either be ALS or BLS. ALS stands for Advanced Life Support and BLS stands for Basic Life Support.",
+          "dataSchema": "iudx:Text"
+        }
+      },
+      "dataSample": {
+        "emergencyVehicleType": "Ambulance",
+        "license_plate": "KA40G425",
+        "vehicleSupportType": "BLS",
+        "observationDateTime": "2021-08-11T13:41:14+5:30",
+        "location": {
+          "type": "Point",
+          "coordinates": [77.59124, 12.9771]
+        },
+        "serviceOnDuty": "YES"
+      },
+      "dataSampleFile": [
+        {
+          "hasObject": "https://fs-sample-file-bucket.s3.ap-south-1.amazonaws.com/public-access/bengaluru/bengaluru-emergency-vehicles-ambulance-live.json",
+          "name": "Bengaluru Realtime Location Info of Ambulances sample",
+          "description": "Sample file for Realtime Location Info of Ambulances in Bengaluru city",
+          "relationType": "REL_FILE"
+        }
+      ],
+      "location": {
+        "geometry": {
+          "coordinates": [
+            [
+              [77.316284, 13.02329],
+              [77.445373, 12.79707],
+              [77.737884, 12.768946],
+              [77.843627, 12.96575],
+              [77.742004, 13.161062],
+              [77.487945, 13.186468],
+              [77.316284, 13.02329]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "address": "Bengaluru, Karnataka",
+        "type": "Place"
+      },
+      "itemStatus": "ACTIVE",
+      "instance": "bengaluru",
+      "ownerUserId": "7e5ac7cf-3f45-4141-a83a-fb29bc47c943",
+      "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+      "itemCreatedAt": "2024-10-18T05:02:13+0530"
+}

@@ -1,0 +1,255 @@
+{
+    "@context": "https://voc.iudx.org.in/",
+    "type": [
+      "iudx:Resource",
+      "iudx:RoadSegment"
+    ],
+    "id": "1e2f3a4b-5678-9012-3456-789012345678",
+    "name": "road-segment-info",
+    "label": "Road Network Information in Kannur City",
+    "description": "Information pertaining to road segment like carriageway dimensions, location ,pedestrian path etc in Kannur City.",
+    "tags": [
+      "road trace",
+      "carriage way",
+      "road type",
+      "road assets",
+      "road network",
+      "road features",
+      "road information",
+      "trace",
+      "segment",
+      "track",
+      "foot path"
+    ],
+    "accessPolicy": "SECURE",
+    "apdURL": "acl-apd.iudx.org.in",
+    "resourceType": "GSLAYER",
+    "iudxResourceAPIs": [
+      "ATTR",
+      "SPATIAL"
+    ],
+    "dataDescriptor": {
+      "@context": "https://voc.iudx.org.in/",
+      "type": [
+        "iudx:DataDescriptor",
+        "iudx:RoadSegment"
+      ],
+      "dataDescriptorLabel": "Data Attributes for Road Network in Kannur City",
+      "description": "Data attribute details for road network in Kannur City.",
+      "roadID": {
+        "description": "Unique representation of the road corresponding to this observation",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "roadName": {
+        "description": "Name of the road corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "carriagewayLength": {
+        "description": "Total length of the carriageway of the road segment corresponding to this observation.",
+        "unitCode": "KTM",
+        "unitText": "kilometre (km)",
+        "dataSchema": "iudx:Number",
+        "type": [
+          "ValueDescriptor"
+        ]
+      },
+      "carriagewayWidth": {
+        "description": "Total width of the carriageway of the road segment corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "meter (m)",
+        "dataSchema": "iudx:Number",
+        "type": [
+          "ValueDescriptor"
+        ]
+      },
+      "rightOfWayWidth": {
+        "description": "Total width including the basic and ancillary elements of the road segment corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "meter (m)",
+        "dataSchema": "iudx:Number",
+        "type": [
+          "ValueDescriptor"
+        ]
+      },
+      "roadStartPoint": {
+        "description": "Describes the name of the point where the road segment corresponding to this observation starts.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "roadEndPoint": {
+        "description": "Describes the name of the point where the road segment corresponding to this observation ends.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "district": {
+        "description": "Name of the district corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "ulbName": {
+        "description": "Name of the Urban Local Body corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "roadClass": {
+        "description": "The category of road corresponding to this observation. Field can take up values like OTHER_PUBLIC_ROAD, PRIVATE_ROAD etc",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "pedestrianPathPlacement": {
+        "description": "Describes the presence and placement of pedestrian path along the road segment corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "pedestrianPathRightWidth": {
+        "description": "Width of the pedestrian path placed on the right edge of the road corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "meter (m)",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Number"
+      },
+      "pedestrianPathLeftWidth": {
+        "description": "Width of the pedestrian path placed on the left edge of the road corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "meter (m)",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Number"
+      },
+      "totalPedestrianPathWidth": {
+        "description": "Total width of the pedestrian path present on the road corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "meter (m)",
+        "dataSchema": "iudx:Number",
+        "type": [
+          "ValueDescriptor"
+        ]
+      },
+      "agency_name": {
+        "description": "Name of the public/private road contractor corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "roadMaterial": {
+        "description": "Construction material used for laying the carriageway corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "pedestrianPathMaterial": {
+        "description": "Construction material used for laying the walkway/footpath on the sides of the road corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:Text"
+      },
+      "location": {
+        "description": "Physical coordinates of the road corresponding to this observation.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "dataSchema": "iudx:LineString"
+      }
+    },
+    "dataSample": {
+      "roadID": "5272",
+      "roadName": "GREEN VILLA ROAD TO CHAITHRAM HOUSE",
+      "carriagewayLength": 0.095454461114818,
+      "carriagewayWidth": 3,
+      "rightOfWayWidth": 4,
+      "roadStartPoint": {
+        "name": "GREEN VILLA ROAD"
+      },
+      "roadEndPoint": {
+        "name": "CHAITHRAM HOUSE"
+      },
+      "district": "KANNUR",
+      "ulbName": "KANNUR MUNICIPAL CORPORATION",
+      "roadClass": "OTHER_PUBLIC_ROAD",
+      "pedestrianPathPlacement": "NOT_AVAILABLE",
+      "pedestrianPathRightWidth": 0,
+      "pedestrianPathLeftWidth": 0,
+      "totalPedestrianPathWidth": 0,
+      "agency_name": "CORPORATION",
+      "roadMaterial": "TAR",
+      "pedestrianPathMaterial": null,
+      "location": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            [75.349944, 11.892856],
+            [75.349944, 11.892841],
+            [75.349944, 11.89283],
+            [75.349937, 11.89236],
+            [75.349937, 11.892354],
+            [75.349939, 11.892348],
+            [75.349941, 11.892342],
+            [75.349946, 11.892337],
+            [75.349954, 11.892334],
+            [75.349968, 11.892332],
+            [75.349987, 11.892332],
+            [75.350292, 11.892312]
+          ]
+        ]
+      }
+    },
+    "dataSampleFile": [
+      {
+        "hasObject": "https://fs-sample-file-bucket.s3.ap-south-1.amazonaws.com/public-access/kannur/kannur-road-network.json",
+        "name": "Road Network Info in Kannur City",
+        "description": "Sample file for Road Network Info in Kannur City.",
+        "relationType": "REL_FILE"
+      }
+    ],
+    "location": {
+      "type": "Place",
+      "address": "Kannur, Kerala",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [75.958722, 11.964848],
+            [75.890829, 11.717964],
+            [75.62258, 11.622533],
+            [75.136408, 12.015649],
+            [75.188633, 12.281524],
+            [75.470651, 12.319506],
+            [75.199049, 12.002221],
+            [75.958722, 11.964848]
+          ]
+        ]
+      }
+    },
+    "itemStatus": "ACTIVE",
+    "instance": "kannur",
+    "ownerUserId": "c81dda37-44e9-477c-a774-884eb84f758f",
+    "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+    "itemCreatedAt": "2025-07-09T13:45:00+0530",
+    "provider": "",
+    "resourceServer": "",
+    "resourceGroup": ""
+  }

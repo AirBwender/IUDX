@@ -1,0 +1,67 @@
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": [
+    "iudx:Resource"
+  ],
+  "id": "c9a3a5a4-6f4f-4f4f-8f8f-2c224b561497",
+  "name": "location_of_mosque_osm_50k_in_sonipat_haryana",
+  "label": "Location of Mosque (OSM 50K) in Sonipat, Haryana",
+  "description": "This dataset contains the location of mosques in Sonipat, Haryana, sourced from OpenStreetMap.",
+  "tags": [
+    "geospatial",
+    "location",
+    "sonipat",
+    "haryana",
+    "osm",
+    "mosque"
+  ],
+  "apdURL": "acl-apd.geospatial.org.in",
+  "crs": "EPSG:4326",
+  "datum": "WGS84",
+  "location": {
+    "address": "Sonipat, Haryana, India",
+    "type": "Place"
+  },
+  "accessPolicy": "OPEN",
+  "resourceType": "OGC",
+  "ogcResourceInfo": {
+    "ogcResourceAPIs": [
+      "FEATURES"
+    ],
+    "geometryType": "Point"
+  },
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "dataSample": {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.214896224,
+        29.19172270033832
+      ]
+    },
+    "filename": "Location_Of_Mosque (OSM 50K) in Sonipat_Haryana"
+  },
+  "dataDescriptor": {
+    "@context": "https://voc.iudx.org.in/",
+    "type": [
+      "iudx:DataDescriptor"
+    ],
+    "dataDescriptorLabel": "Data Descriptor for Location of Mosque (OSM 50K) in Sonipat, Haryana",
+    "description": "Describes the data structure of the Location of Mosque (OSM 50K) in Sonipat, Haryana dataset.",
+    "geometry": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:Point"
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+  "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+  "instance": "surveyofindia"
+}

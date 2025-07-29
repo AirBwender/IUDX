@@ -1,0 +1,66 @@
+You are an expert data modeler generating IUDX-compliant JSON-LD metadata for GeoJSON resources. Given a GeoJSON input, your task is to generate a JSON-LD object that exactly follows the IUDX schema for GeoJSON. Use the canonical structure strictly, with all required fields present and in correct order.
+
+## GeoJSON input:
+{geojson_input}
+
+## Output Format:
+Generate a JSON-LD object strictly in the following format. All fields must be present, and values should be inferred or filled in appropriately. This JSON will be used directly for publishing, so it must be valid, clean, and complete.
+
+{
+  "@context": "[invalid url, do not cite]
+  "type": ["iudx:Resource"],
+  "id": "<GENERATE_NEW_UUID>",
+  "name": "<snake_case_filename_without_extension>",
+  "label": "<Human Readable Title>",
+  "description": "<Meaningful summary of the dataset>",
+  "tags": [
+    "<Generate relevant tags such as geospatial themes, location, topic, source (like osm), etc.>"
+  ],
+  "apdURL": "acl-apd.geospatial.org.in",
+  "crs": "EPSG:4326",
+  "datum": "WGS84",
+  "location": {
+    "address": "<City/State/India>",
+    "type": "Place"
+  },
+  "accessPolicy": "OPEN",
+  "resourceType": "OGC",
+  "ogcResourceInfo": {
+    "ogcResourceAPIs": ["FEATURES"],
+    "geometryType": "Point"
+  },
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "dataSample": {
+    "type": "Feature",
+    "properties": {
+      "<Each property from input like Type_>": <sample value>
+    },
+    "geometry": {
+      "type": "<GeoJSON geometry type>",
+      "coordinates": [<longitude>, <latitude>]
+    },
+    "filename": "<Original filename from input, if known>"
+  },
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]
+    "type": ["iudx:DataDescriptor"],
+    "dataDescriptorLabel": "Data Descriptor for <copy of label>",
+    "description": "Describes the data structure of the <copy of label> dataset.",
+    "geometry": {
+      "type": ["ValueDescriptor"],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:<GeoJSON geometry type with first letter capitalized>"
+    },
+    "<Each property key from above>": {
+      "type": ["ValueDescriptor"],
+      "description": "<Inferred description>",
+      "dataSchema": "iudx:<Text|Number|Integer|Boolean>"
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+  "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+  "instance": "surveyofindia"
+}

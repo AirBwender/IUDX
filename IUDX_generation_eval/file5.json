@@ -1,0 +1,11 @@
+{
+  "deviceName": "18MLD.WTP2.PROCESS.CWS_PT_103",
+  "measurand": "CWS PUMP1 O/L PRESSURE TRANSMITTER | Unit: KG/CM2",
+  "deviceStatus": "LOW LOW:2 | Range: 0-10",
+  "deviceMeasure": 0,
+  "observationDateTime": "2024-11-05T15:03:59+05:30",
+  "location": {
+    "coordinates": [80.852842, 24.571722]
+  },
+  "filename": "satna_water_distribution_network_mld18.json"
+}

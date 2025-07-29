@@ -1,0 +1,76 @@
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": [
+    "iudx:Resource"
+  ],
+  "id": "f5a6a3a5-6f6f-4f4f-8f7f-5f5f5f5f5f5f",
+  "name": "location_of_temple_osm_50k_in_sonipat_haryana",
+  "label": "Location of Temple (OSM 50K) in Sonipat, Haryana",
+  "description": "This dataset contains the location of a temple in Sonipat, Haryana, sourced from OpenStreetMap.",
+  "tags": [
+    "geospatial",
+    "location",
+    "temple",
+    "osm",
+    "sonipat",
+    "haryana"
+  ],
+  "apdURL": "acl-apd.geospatial.org.in",
+  "crs": "EPSG:4326",
+  "datum": "WGS84",
+  "location": {
+    "address": "Sonipat, Haryana, India",
+    "type": "Place"
+  },
+  "accessPolicy": "OPEN",
+  "resourceType": "OGC",
+  "ogcResourceInfo": {
+    "ogcResourceAPIs": [
+      "FEATURES"
+    ],
+    "geometryType": "Point"
+  },
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "dataSample": {
+    "type": "Feature",
+    "properties": {
+      "Type_": 2
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.41462895569893,
+        29.157327761329174
+      ]
+    },
+    "filename": "Location_Of_Temple (OSM 50K) in Sonipat_Haryana"
+  },
+  "dataDescriptor": {
+    "@context": "https://voc.iudx.org.in/",
+    "type": [
+      "iudx:DataDescriptor"
+    ],
+    "dataDescriptorLabel": "Data Descriptor for Location of Temple (OSM 50K) in Sonipat, Haryana",
+    "description": "Describes the data structure of the Location of Temple (OSM 50K) in Sonipat, Haryana dataset.",
+    "geometry": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:Point"
+    },
+    "Type_": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Type of the location.",
+      "dataSchema": "iudx:Integer"
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+  "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+  "instance": "surveyofindia"
+}

@@ -1,0 +1,99 @@
+{
+  "@context": "[invalid url, do not cite]",
+  "type": ["iudx:Resource", "iudx:EnergyMeter"],
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "name": "version-info",
+  "label": "Device Details of Energy Monitoring in IIIT Hyderabad, Telangana",
+  "description": "Details of the device installed for monitoring energy consumption at IIIT Hyderabad, Telangana",
+  "tags": ["energy", "meter", "monitoring", "iiit", "hyderabad"],
+  "apdURL": "acl-apd.iudx.org.in",
+  "location": {
+    "address": "IIIT Hyderabad, Telangana",
+    "type": "Place"
+  },
+  "accessPolicy": "SECURE",
+  "resourceType": "MESSAGESTREAM",
+  "iudxResourceAPIs": ["ATTR", "TEMPORAL"],
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]",
+    "type": ["iudx:DataDescriptor", "iudx:EnergyMeter"],
+    "dataDescriptorLabel": "Data Descriptor for device and version specifications of Energy Monitoring in IIIT Hyderabad, Telangana",
+    "description": "Describes the data structure of the Energy Monitoring dataset in IIIT Hyderabad, Telangana",
+    "deviceInfo": {
+      "type": ["Device"],
+      "deviceName": {
+        "dataSchema": "iudx:Text",
+        "type": ["ValueDescriptor"],
+        "description": "Device name of the Energy Monitoring corresponding to this observation."
+      },
+      "deviceID": {
+        "dataSchema": "iudx:Text",
+        "type": ["ValueDescriptor"],
+        "description": "Device ID of the Energy Monitoring corresponding to this observation."
+      }
+    },
+    "versionInfo": {
+      "type": ["Version"],
+      "versionSpec": {
+        "dataSchema": "iudx:Object",
+        "type": ["ValueDescriptor"],
+        "description": "Device specifications w.r.t. the version corresponding to this observation."
+      },
+      "comments": {
+        "dataSchema": "iudx:Text",
+        "type": ["ValueDescriptor"],
+        "description": "User comments w.r.t the version corresponding to this observation."
+      },
+      "startDateTime": {
+        "dataSchema": "iudx:DateTime",
+        "type": ["ValueDescriptor"],
+        "description": "Reported start time of the version corresponding to this observation."
+      },
+      "endDateTime": {
+        "dataSchema": "iudx:DateTime",
+        "type": ["ValueDescriptor"],
+        "description": "Reported end time of the version corresponding to this observation."
+      },
+      "versionName": {
+        "dataSchema": "iudx:Text",
+        "type": ["ValueDescriptor"],
+        "description": "Version name corresponding to the device in this observation."
+      }
+    }
+  },
+  "dataSample": {
+    "deviceInfo": {
+      "deviceName": "Energy Monitoring",
+      "deviceID": "EM-NC-VN01-00"
+    },
+    "versionInfo": [
+      {
+        "versionSpec": {
+          "frequency": "",
+          "reactiveEnergyLead": "",
+          "reactiveEnergyLag": "",
+          "rssi": "",
+          "phaseCurrent": "",
+          "phaseVoltage": "",
+          "controller": "'Energy API running in a Django application on the Resource Server",
+          "totalActivePower": "",
+          "totalApparentPower": "",
+          "powerFactor": "",
+          "energyConsumed": ""
+        },
+        "comments": "Energy Monitoring",
+        "startDateTime": "2020-08-19T10:00:00+05:30",
+        "endDateTime": "9999-99-99T99:99:99+05:30",
+        "versionName": "V1.00.00"
+      }
+    ]
+  },
+  "instance": "Hyderabad",
+  "itemStatus": "ACTIVE",
+  "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+  "ownerUserId": "",
+  "itemCreatedAt": "2025-07-09T12:48:00+0530",
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": ""
+}

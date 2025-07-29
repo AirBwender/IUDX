@@ -1,0 +1,105 @@
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": [
+    "iudx:Resource"
+  ],
+  "id": "f5a6a3a5-6f6f-4f4f-8f7f-5f5f5f5f5f5f",
+  "name": "location_of_temple_osm_50k_in_sonipat_haryana",
+  "label": "Location of Temple (OSM 50K) in Sonipat, Haryana",
+  "description": "This dataset contains the location of a temple in Sonipat, Haryana, sourced from OpenStreetMap.",
+  "tags": [
+    "geospatial",
+    "location",
+    "temple",
+    "osm",
+    "sonipat",
+    "haryana"
+  ],
+  "apdURL": "acl-apd.geospatial.org.in",
+  "crs": "EPSG:4326",
+  "datum": "WGS84",
+  "location": {
+    "address": "Sonipat, Haryana, India",
+    "type": "Place"
+  },
+  "accessPolicy": "OPEN",
+  "resourceType": "OGC",
+  "ogcResourceInfo": {
+    "ogcResourceAPIs": [
+      "FEATURES"
+    ],
+    "geometryType": "Point"
+  },
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "dataSample": {
+    "type": "Feature",
+    "properties": {
+      "Type_": 2
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.41462895569893,
+        29.157327761329174
+      ]
+    },
+    "filename": "Location_Of_Temple (OSM 50K) in Sonipat_Haryana"
+  },
+  "dataDescriptor": {
+    "@context": "https://voc.iudx.org.in/",
+    "type": [
+      "iudx:DataDescriptor",
+      "iudx:EmergencyVehicle"
+    ],
+    "dataDescriptorLabel": "Data descriptor for ambulance vehicle details in Vadodara city.",
+    "description": "Ambulances in Vadodara city.",
+    "emergencyVehicleType": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "The vehicle type of the emergency vehicle corresponding to this observation,which is AMBULANCE in this instance.",
+      "dataSchema": "iudx:Text"
+    },
+    "license_plate": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Registration number of the ambulance vehicle corresponding to this observation.",
+      "dataSchema": "iudx:Text"
+    },
+    "serviceOnDuty": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Describes if the ambulance corresponding to this observation is attending to an emergency call or not. This field is marked YES if the ambulance is attending to a call and marked NO otherwise.",
+      "dataSchema": "iudx:Text"
+    },
+    "observationDateTime": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Last reported time of observation.",
+      "dataSchema": "iudx:DateTime"
+    },
+    "location": {
+      "description": "Physical coordinates of the ambulance vehicle at the last tracked time of observation.",
+      "type": [
+        "ValueDescriptor"
+      ],
+      "dataSchema": "iudx:Point"
+    },
+    "geometry": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "autofixed",
+      "dataSchema": "iudx:Point"
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+  "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+  "instance": "surveyofindia"
+}

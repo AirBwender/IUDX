@@ -1,0 +1,18 @@
+{
+  "location": {
+    "coordinates": [72.886055, 21.224406],
+    "type": "Point"
+  },
+  "last_stop_id": "4032",
+  "actual_trip_start_time": "2020-09-16T13:30:00+05:30",
+  "speed": 28,
+  "observationDateTime": "2020-09-16T13:30:00+05:30",
+  "trip_delay": 11968,
+  "trip_direction": "DN",
+  "last_stop_arrival_time": "13:30:12",
+  "vehicle_label": "A03",
+  "route_id": "17AD",
+  "license_plate": "GJ05BX1583",
+  "trip_id": "23952340",
+  "filename": "surat_transit_management_live_eta.json"
+}

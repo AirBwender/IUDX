@@ -1,0 +1,43 @@
+{
+  "roadID": "5272",
+  "roadName": "GREEN VILLA ROAD TO CHAITHRAM HOUSE",
+  "carriagewayLength": 0.095454461114818,
+  "carriagewayWidth": 3,
+  "rightOfWayWidth": 4,
+  "roadStartPoint": {
+    "name": "GREEN VILLA ROAD"
+  },
+  "roadEndPoint": {
+    "name": "CHAITHRAM HOUSE"
+  },
+  "district": "KANNUR",
+  "ulbName": "KANNUR MUNICIPAL CORPORATION",
+  "roadClass": "OTHER_PUBLIC_ROAD",
+  "pedestrianPathPlacement": "NOT_AVAILABLE",
+  "pedestrianPathRightWidth": 0,
+  "pedestrianPathLeftWidth": 0,
+  "totalPedestrianPathWidth": 0,
+  "agency_name": "CORPORATION",
+  "roadMaterial": "TAR",
+  "pedestrianPathMaterial": null,
+  "location": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        [75.349944, 11.892856],
+        [75.349944, 11.892841],
+        [75.349944, 11.89283],
+        [75.349937, 11.89236],
+        [75.349937, 11.892354],
+        [75.349939, 11.892348],
+        [75.349941, 11.892342],
+        [75.349946, 11.892337],
+        [75.349954, 11.892334],
+        [75.349968, 11.892332],
+        [75.349987, 11.892332],
+        [75.350292, 11.892312]
+      ]
+    ]
+  },
+  "filename": "kannur_road_segment_info.json"
+}

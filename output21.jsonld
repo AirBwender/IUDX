@@ -1,0 +1,119 @@
+{
+      "@context": "https://voc.iudx.org.in/",
+      "id": "04fec24c-f818-4d53-859e-49de3b6bd2c1",
+      "type": [
+        "iudx:Resource",
+        "iudx:EmergencyVehicle"
+      ],
+      "name": "ambulance-live",
+      "label": "Realtime Location of Ambulances in Vadodara City.",
+      "description": "The realtime information such as vehicle location and on call status of other types of ambulances at an interval of 10 seconds in Vadodara city.",
+      "tags": [
+        "ambulance",
+        "emergency vehicle",
+        "license plate",
+        "sos",
+        "on call",
+        "emergency service",
+        "patient",
+        "hospital",
+        "on duty",
+        "help",
+        "service on duty"
+      ],
+      "accessPolicy": "SECURE",
+      "apdURL": "acl-apd.iudx.org.in",
+      "provider": "ceb49f98-c3e7-4c9a-8ee2-493e63350977",
+      "resourceServer": "ab311420-7d84-4a0a-9fdb-c811be588589",
+      "resourceGroup": "931e7d23-220f-4498-a67c-93e11d154cb2",
+      "resourceType": "MESSAGESTREAM",
+      "iudxResourceAPIs": [
+        "ATTR",
+        "TEMPORAL",
+        "SPATIAL"
+      ],
+      "dataDescriptor": {
+        "@context": "https://voc.iudx.org.in/",
+        "type": [
+          "iudx:DataDescriptor",
+          "iudx:EmergencyVehicle"
+        ],
+        "dataDescriptorLabel": "Data descriptor for ambulance vehicle details in Vadodara city.",
+        "description": "Ambulances in Vadodara city.",
+        "emergencyVehicleType": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "The vehicle type of the emergency vehicle corresponding to this observation,which is AMBULANCE in this instance.",
+          "dataSchema": "iudx:Text"
+        },
+        "license_plate": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Registration number of the ambulance vehicle corresponding to this observation.",
+          "dataSchema": "iudx:Text"
+        },
+        "serviceOnDuty": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Describes if the ambulance corresponding to this observation is attending to an emergency call or not. This field is marked YES if the ambulance is attending to a call and marked NO otherwise.",
+          "dataSchema": "iudx:Text"
+        },
+        "observationDateTime": {
+          "type": [
+            "ValueDescriptor"
+          ],
+          "description": "Last reported time of observation.",
+          "dataSchema": "iudx:DateTime"
+        },
+        "location": {
+          "description": "Physical coordinates of the ambulance vehicle at the last tracked time of observation.",
+          "type": [
+            "ValueDescriptor"
+          ],
+          "dataSchema": "iudx:Point"
+        }
+      },
+      "dataSample": {
+        "emergencyVehicleType": "AMBULANCE",
+        "license_plate": "GJ06G6385",
+        "observationDateTime": "2021-07-25T19:46:04+05:30",
+        "location": {
+          "type": "Point",
+          "coordinates": [73.171237, 22.309942]
+        },
+        "serviceOnDuty": "YES"
+      },
+      "dataSampleFile": [
+        {
+          "hasObject": "https://fs-sample-file-bucket.s3.ap-south-1.amazonaws.com/public-access/vadodara/vadodara-emergency-vehicles-ambulance-live.json",
+          "name": "Vadodara  Ambulances Realtime Location Info  sample",
+          "description": "Sample file for Realtime Location Info of Ambulances like vehicle location and on call status of Ambulances in Vadodara city",
+          "relationType": "REL_FILE"
+        }
+      ],
+      "location": {
+        "type": "Place",
+        "address": "Vadodara",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [73.13804, 22.38404],
+              [73.10508, 22.30084],
+              [73.18714, 22.22967],
+              [73.28224, 22.30466],
+              [73.2249, 22.38214],
+              [73.13804, 22.38404]
+            ]
+          ]
+        }
+      },
+      "itemStatus": "ACTIVE",
+      "instance": "vadodara",
+      "ownerUserId": "3e60d612-e205-46a3-903a-5d9ec63b35e0",
+      "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+      "itemCreatedAt": "2023-01-31T02:15:38+0530"
+}

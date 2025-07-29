@@ -1,0 +1,83 @@
+"dataSample": {
+      "type": "Feature",
+      "properties": {
+         "S.No.": "1033",
+         "Block": "Vizianagaram",
+         "Panchayat": "Jonnavalasa",
+         "Village": "Jonnavalasa",
+         "Habitation": "Jonnavalasa",
+         "Sourcetype": "Deep Tubewell",
+         "Sourcetypecategory": "Ground Water"
+      },
+      "geometry": {
+         "type": "Point",
+         "coordinates": [
+            83.365144,
+            18.093153
+         ]
+      }
+   },
+   "dataDescriptor": {
+      "@context": "https://voc.iudx.org.in/",
+      "type": [
+         "iudx:DataDescriptor"
+      ],
+      "dataDescriptorLabel": "Data Descriptor for Location of Tubewells, Haryana",
+      "description": "Data attribute details of the Location of Tubewells, Haryana.",
+      "S.No.": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Serial Number of the tubewell.",
+         "dataSchema": "iudx:Number"
+      },
+      "Block": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Administrative Block where the tubewell is located.",
+         "dataSchema": "iudx:Text"
+      },
+      "Panchayat": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Panchayat where the tubewell is located.",
+         "dataSchema": "iudx:Text"
+      },
+      "Village": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Village where the tubewell is located.",
+         "dataSchema": "iudx:Text"
+      },
+      "Habitation": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Name of the habitation where the tubewell is located.",
+         "dataSchema": "iudx:Text"
+      },
+      "Sourcetype": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Type of water source.",
+         "dataSchema": "iudx:Text"
+      },
+      "Sourcetypecategory": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Category of the water source.",
+         "dataSchema": "iudx:Text"
+      },
+      "geometry": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Geographical representation of the tubewell location.",
+         "dataSchema": "iudx:Point"
+      }
+   }

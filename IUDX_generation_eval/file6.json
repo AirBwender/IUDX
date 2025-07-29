@@ -1,0 +1,9 @@
+{
+  "name": "Bike Docking Station Alandur Metro",
+  "stationName": "Alandur Metro",
+  "location": {
+    "type": "Point",
+    "coordinates": [80.2010611, 13.0035349]
+  },
+  "filename": "chennai_bike_docking_stations.json"
+}

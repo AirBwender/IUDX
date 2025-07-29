@@ -1,0 +1,70 @@
+{
+   "@context": "https://voc.iudx.org.in/",
+   "type": [
+      "iudx:Resource"
+   ],
+   "id": "d6a4793a-2b11-4e91-b7f2-a4dfff1f4b08",
+   "name": "location_of_mosque_sonipat_haryana",
+   "label": "Location of Mosque (OSM 50K) in Sonipat, Haryana",
+   "description": "This data layer represents the locations of mosques in Sonipat, Haryana, extracted from OpenStreetMap (OSM 50K) data.",
+   "tags": [
+      "geographical names (toponymy)",
+      "functional areas (religious places)",
+      "physical infrastructure",
+      "mosque",
+      "religion",
+      "sonipat",
+      "haryana",
+      "dronagiri",
+      "geospatial",
+      "dronagiri"
+   ],
+   "apdURL": "acl-apd.geospatial.org.in",
+   "crs": "EPSG:4326",
+   "datum": "WGS84",
+   "location": {
+      "address": "Sonipat,Haryana,India",
+      "type": "Place"
+   },
+   "accessPolicy": "OPEN",
+   "resourceType": "OGC",
+   "ogcResourceInfo": {
+      "ogcResourceAPIs": [
+         "FEATURES"
+      ],
+      "geometryType": "Point"
+   },
+   "provider": "1435bd14-1fe1-47b4-b82b-7448c534a9b9",
+   "resourceServer": "310ec5d1-7291-4346-b8aa-401c471e8be1",
+   "resourceGroup": "8c145ffc-06b1-4b28-9fa6-717786ed65e7",
+   "dataSample": {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+         "type": "Point",
+         "coordinates": [
+            77.21489622400486,
+            29.19172270033832
+         ]
+      }
+   },
+   "dataDescriptor": {
+      "@context": "https://voc.iudx.org.in/",
+      "type": [
+         "iudx:DataDescriptor"
+      ],
+      "dataDescriptorLabel": "Data Descriptor for Location of Mosque (OSM 50K) in Sonipat, Haryana",
+      "description": "Data attribute details of Location of Mosque (OSM 50K) in Sonipat, Haryana.",
+      "geometry": {
+         "type": [
+            "ValueDescriptor"
+         ],
+         "description": "Geographical representation corresponding to this observation.",
+         "dataSchema": "iudx:Point"
+      }
+   },
+   "itemStatus": "ACTIVE",
+   "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+   "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+   "instance": "surveyofindia"
+}

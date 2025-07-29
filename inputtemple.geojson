@@ -1,0 +1,14 @@
+{
+  "type": "Feature",
+  "properties": {
+    "Type_": 2
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      76.41462895569893,
+      29.157327761329174
+    ]
+  },
+  "filename": "Location_Of_Temple (OSM 50K) in Sonipat_Haryana"
+}

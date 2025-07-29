@@ -1,0 +1,124 @@
+{
+  "@context": "[invalid url, do not cite]",
+  "type": ["iudx:Resource", "iudx:TransitManagement"],
+  "id": "6f7e8c9a-b012-3456-7890-123456789012",
+  "name": "surat-itms-live-eta",
+  "label": "Bus Position and ETA of Public Transit Buses in Surat City",
+  "description": "Realtime information of buses in Surat City. Publishes bus position and ETA in Surat City at an interval of 10 seconds.",
+  "tags": ["transit", "bus", "eta", "surat", "public transport"],
+  "apdURL": "acl-apd.iudx.org.in",
+  "location": {
+    "address": "Surat",
+    "type": "Place",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[[72.941762, 21.259964], [72.896444, 21.166506], [72.822981, 21.068548], [72.713804, 21.136772], [72.746763, 21.200163], [72.831564, 21.269925], [72.941762, 21.259964]]]
+    }
+  },
+  "accessPolicy": "SECURE",
+  "resourceType": "MESSAGESTREAM",
+  "iudxResourceAPIs": ["SPATIAL", "TEMPORAL", "ATTR"],
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]",
+    "type": ["iudx:DataDescriptor", "iudx:TransitManagement"],
+    "dataDescriptorLabel": "Data descriptor for live bus ETA and live vehicle position in Surat",
+    "description": "Data attribute details for live bus ETA and live vehicle position in Surat",
+    "location": {
+      "description": "The coordinates for the current position of the bus corresponding to this observation.",
+      "dataSchema": "iudx:Point",
+      "type": ["ValueDescriptor"]
+    },
+    "last_stop_id": {
+      "description": "Stop ID/Stop name of the previous bus stop corresponding to the bus in this observation.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "actual_trip_start_time": {
+      "description": "This field specifies the time at which bus service actually began for the trip corresponding to this observation.",
+      "dataSchema": "iudx:DateTime",
+      "type": ["ValueDescriptor"]
+    },
+    "speed": {
+      "description": "The Speed of the bus observed at the last tracked coordinates.",
+      "dataSchema": "iudx:Number",
+      "unitText": "kilometre per hour",
+      "unitCode": "KMH",
+      "type": ["ValueDescriptor"]
+    },
+    "vehicle_label": {
+      "description": "User visible label, i.e., something that must be shown to the passenger to help identify the correct vehicle.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "observationDateTime": {
+      "description": "The time at which the vehicle was last tracked.",
+      "dataSchema": "iudx:DateTime",
+      "type": ["ValueDescriptor"]
+    },
+    "trip_delay": {
+      "description": "This can be positive and negative in seconds and shows how much the vehicle deviates from the planned one.",
+      "dataSchema": "iudx:Number",
+      "unitText": "second",
+      "unitCode": "SEC",
+      "type": ["ValueDescriptor"]
+    },
+    "trip_direction": {
+      "description": "The direction in which the vehicle is travelling. ENUM[UP,DN].",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "last_stop_arrival_time": {
+      "description": "Specifies the arrival time at the previous stop for a specific trip on a route.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "route_id": {
+      "description": "Route ID assigned to the route on which the bus corresponding to this observation is plying on.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "license_plate": {
+      "description": "Vehicle registration number/license plate number of the bus corresponding to this observation.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "trip_id": {
+      "description": "Trip ID allotted to the bus corresponding to this observation.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    }
+  },
+  "dataSample": {
+    "location": {
+      "coordinates": [72.886055, 21.224406],
+      "type": "Point"
+    },
+    "last_stop_id": "4032",
+    "actual_trip_start_time": "2020-09-16T13:30:00+05:30",
+    "speed": 28,
+    "observationDateTime": "2020-09-16T13:30:00+05:30",
+    "trip_delay": 11968,
+    "trip_direction": "DN",
+    "last_stop_arrival_time": "13:30:12",
+    "vehicle_label": "A03",
+    "route_id": "17AD",
+    "license_plate": "GJ05BX1583",
+    "trip_id": "23952340"
+  },
+  "dataSampleFile": [
+    {
+      "hasObject": "[invalid url, do not cite]/transit-management-live-eta.json",
+      "name": "Surat Transit Bus Position and ETA in sample",
+      "description": "Sample file for Transit Bus Position and ETA in Surat city.",
+      "relationType": "REL_FILE"
+    }
+  ],
+  "instance": "Surat",
+  "itemStatus": "ACTIVE",
+  "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+  "ownerUserId": "",
+  "itemCreatedAt": "2025-07-09T12:48:00+0530",
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": ""
+}

@@ -1,0 +1,24 @@
+{
+  "dataDescriptor": {
+    "@context": "https://voc.iudx.org.in/",
+    "type": [
+      "iudx:DataDescriptor"
+    ],
+    "dataDescriptorLabel": "Data Descriptor for Location of Temple (OSM 50K), Sonipat, Haryana",
+    "description": "This dataset contains information about the location of a temple in Sonipat, Haryana.",
+    "Type_": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Type of the location",
+      "dataSchema": "iudx:Integer"
+    },
+    "geometry": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:Point"
+    }
+  }
+}

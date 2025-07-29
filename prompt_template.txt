@@ -1,0 +1,92 @@
+You are an expert data modeler generating IUDX-compliant JSON-LD metadata. Given a GeoJSON input (below), your task is to generate a JSON-LD object that exactly follows the IUDX schema. Use the canonical structure strictly, with all required fields present and in correct order.
+
+## GeoJSON input:
+{geojson_input}
+
+## Output Format:
+Generate a JSON-LD object strictly in the following format. All fields must be present, and values should be inferred or filled in appropriately. This JSON will be used directly for publishing, so it must be valid, clean, and complete.
+
+IMPORTANT:
+- Use **exact keys from GeoJSON properties**, including **case sensitivity** (e.g., `"Type_"` not `"type_"`).
+- Do **not** rename, lowercase, or change casing of keys.
+- The `"dataDescriptor"` must use the **exact same property keys** as `"dataSample.properties"`.
+- Do not use arrays for individual property fields inside `dataDescriptor`.
+- Ensure the `"id"` is placed near the top, not at the end.
+- Maintain the original order of fields exactly as shown below.
+
+```json
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": ["iudx:Resource"],
+  "id": "<GENERATE_NEW_UUID>",
+  "name": "<snake_case_filename_without_extension>",
+  "label": "<Human Readable Title>",
+  "description": "<Meaningful summary of the dataset>",
+  "tags": [
+    "<Generate relevant tags such as geospatial themes, location, topic, source (like osm), etc.>"
+  ],
+  "apdURL": "acl-apd.geospatial.org.in",
+  "crs": "EPSG:4326",
+  "datum": "WGS84",
+  "location": {
+    "address": "<City/State/India>",
+    "type": "Place"
+  },
+  "accessPolicy": "OPEN",
+  "resourceType": "OGC",
+  "ogcResourceInfo": {
+    "ogcResourceAPIs": ["FEATURES"],
+    "geometryType": "Point"
+  },
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "dataSample": {
+    "type": "Feature",
+    "properties": {
+      "<Each property from input like Type_>": <sample value>
+    },
+    "geometry": {
+      "type": "<GeoJSON geometry type>",
+      "coordinates": [<longitude>, <latitude>]
+    },
+    "filename": "<Original filename from input, if known>"
+  },
+  "dataDescriptor": {
+    "@context": "https://voc.iudx.org.in/",
+    "type": ["iudx:DataDescriptor"],
+    "dataDescriptorLabel": "Data Descriptor for <copy of label>",
+    "description": "Describes the data structure of the <copy of label> dataset.",
+    "geometry": {
+      "type": ["ValueDescriptor"],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:<GeoJSON geometry type with first letter capitalized>"
+    },
+    "<Each property key from above>": {
+      "type": ["ValueDescriptor"],
+      "description": "<Inferred description>",
+      "dataSchema": "iudx:<Text|Number|Integer|Boolean>"  // choose appropriate type
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "cos": "887cc637-2939-4f2f-ad5a-2c224b561497",
+  "ownerUserId": "938d8b1f-e25c-4042-99de-f7349f7af6e7",
+  "instance": "surveyofindia"
+}
+
+Requirements:
+Do not omit any required field.
+
+Ensure correct ordering and data types.
+
+Generate clean and informative labels, descriptions, and tags.
+
+Use snake_case for the "name" field based on filename.
+
+Ensure UUIDs are generated in proper format.
+
+Maintain exact structure, key names, and schema references.
+
+Avoid introducing any keys not in the format or GeoJSON.
+
+Output only the complete JSON-LD. No extra comments or explanations. Not even a single line like "here's the JSON-LD".

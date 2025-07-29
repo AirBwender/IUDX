@@ -1,0 +1,66 @@
+{
+  "@context": "[invalid url, do not cite]",
+  "type": ["iudx:Resource", "iudx:BikeDockingStation"],
+  "id": "0d1e2f3a-f456-7890-1234-567890123456",
+  "name": "chennai-bike-docking-station",
+  "label": "Bike Docking Stations in Chennai City",
+  "description": "Details of bike docking station locations in Chennai City",
+  "tags": ["bike", "docking station", "chennai", "mobility"],
+  "apdURL": "acl-apd.iudx.org.in",
+  "location": {
+    "address": "Chennai",
+    "type": "Place",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[[80.194702, 13.113586], [80.187492, 13.078475], [80.199851, 13.05473], [80.230751, 13.041686], [80.277442, 13.050382], [80.295295, 13.08115], [80.283966, 13.108236], [80.266113, 13.130972], [80.230751, 13.136656], [80.194702, 13.113586]]]
+    }
+  },
+  "accessPolicy": "SECURE",
+  "resourceType": "GSLAYER",
+  "iudxResourceAPIs": ["SPATIAL", "ATTR"],
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]",
+    "type": ["iudx:DataDescriptor", "iudx:BikeDockingStation"],
+    "dataDescriptorLabel": "Data descriptor for Bike Docking Stations in Chennai",
+    "description": "Data attribute details for bike docking station locations in Chennai",
+    "name": {
+      "description": "Name of the bike docking station.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "stationName": {
+      "description": "Station name associated with the bike docking station.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "location": {
+      "description": "The coordinates for the bike docking station location.",
+      "dataSchema": "iudx:Point",
+      "type": ["ValueDescriptor"]
+    }
+  },
+  "dataSample": {
+    "name": "Bike Docking Station Alandur Metro",
+    "stationName": "Alandur Metro",
+    "location": {
+      "type": "Point",
+      "coordinates": [80.2010611, 13.0035349]
+    }
+  },
+  "dataSampleFile": [
+    {
+      "hasObject": "[invalid url, do not cite]/bike-docking-stations.json",
+      "name": "Chennai Bike Docking Stations Sample",
+      "description": "Sample file for Bike Docking Stations in Chennai city.",
+      "relationType": "REL_FILE"
+    }
+  ],
+  "instance": "Chennai",
+  "itemStatus": "ACTIVE",
+  "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+  "ownerUserId": "",
+  "itemCreatedAt": "2025-07-09T12:48:00+0530",
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": ""
+}

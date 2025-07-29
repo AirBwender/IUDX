@@ -1,0 +1,98 @@
+You are an expert data modeler generating IUDX-compliant JSON-LD metadata for EnvAQM resources. Given a JSON input for an EnvAQM in {city}, with location polygon {polygon}, your task is to generate a JSON-LD object that exactly follows the IUDX schema for EnvAQM. Use the canonical structure strictly, with all required fields present and in correct order.
+
+## City: {city}
+
+## Polygon: {polygon}
+
+## URL: {url}
+
+## JSON input:
+{json_input}
+
+## Output Format:
+Generate a JSON-LD object strictly in the following format. All fields must be present, and values should be inferred or filled in appropriately. This JSON will be used directly for publishing, so it must be valid, clean, and complete.
+
+{
+  "@context": "[invalid url, do not cite]
+  "id": "<GENERATE_NEW_UUID>",
+  "type": [
+    "iudx:Resource",
+    "iudx:EnvAQM"
+  ],
+  "name": "{city}-aqm-info",
+  "label": "Air Quality Monitoring Sensors (AQM) in {city} City",
+  "description": "Publishes realtime information of air pollutants from AQM sensors/devices deployed in {city} city. It gives instantaneous values of air pollutant measures like carbon monoxide, nitrogen dioxide, ozone, particulate matter etc., and also the associated environmental factors like temperature, humidity, illuminance.",
+  "tags": [
+    "environment",
+    "air quality",
+    "air",
+    "pollution",
+    "so2",
+    "co2",
+    "co",
+    "no2",
+    "pm2p5",
+    "pm10",
+    "humidity",
+    "temperature",
+    "pressure",
+    "ozone",
+    "o3",
+    "noise",
+    "light",
+    "uv",
+    "aqi",
+    "aqm"
+  ],
+  "accessPolicy": "SECURE",
+  "apdURL": "acl-apd.iudx.org.in",
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": "",
+  "resourceType": "MESSAGESTREAM",
+  "iudxResourceAPIs": [
+    "ATTR",
+    "TEMPORAL"
+  ],
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]
+    "type": [
+      "iudx:DataDescriptor",
+      "iudx:EnvAQM"
+    ],
+    "dataDescriptorLabel": "Data attributes for aqm sensors installed in {city} city",
+    "description": "Data attribute definitions for aqm sensors installed in {city} city",
+    "<each field from json_input>": {
+      "type": [
+        "ValueDescriptor"
+      ],
+      "description": "<Inferred description>",
+      "dataSchema": "iudx:<Text|Number|DateTime>",
+      "<optional unitCode and unitText for measurements>": "<appropriate unit>"
+    }
+  },
+  "dataSample": {
+    "<each field from json_input>": <value from json_input>
+  },
+  "dataSampleFile": [
+    {
+      "hasObject": "{url}",
+      "name": "{city} Air Quality Monitoring Sensors Data Sample",
+      "description": "Sample file containing AQM information in {city} city",
+      "relationType": "REL_FILE"
+    }
+  ],
+  "location": {
+    "type": "Place",
+    "address": "{city}",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": {polygon}
+    }
+  },
+  "itemStatus": "ACTIVE",
+  "instance": "{city}",
+  "ownerUserId": "",
+  "cos": "",
+  "itemCreatedAt": "<current datetime>"
+}

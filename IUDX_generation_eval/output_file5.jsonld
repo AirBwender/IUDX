@@ -1,0 +1,83 @@
+{
+  "@context": "[invalid url, do not cite]",
+  "type": ["iudx:Resource", "iudx:WaterDistributionNetwork"],
+  "id": "9c0d1e2f-e345-6789-0123-456789012345",
+  "name": "mld-18",
+  "label": "Water Distribution Network in Satna City - MLD-18",
+  "description": "Details of water distribution network measurements for MLD-18 WTP in Satna City",
+  "tags": ["water", "distribution", "mld-18", "satna"],
+  "apdURL": "acl-apd.iudx.org.in",
+  "location": {
+    "address": "Satna",
+    "type": "Place",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[[80.7754566807481, 24.5982538195379], [80.7686723964293, 24.5722522821716], [80.7817554999998, 24.5607883640749], [80.8253740931068, 24.5532818867026], [80.8728716781444, 24.5568064615414], [80.9174898454848, 24.5902897773785], [80.8757570400335, 24.6268852484211], [80.8127544894199, 24.6290987351912], [80.7754566807481, 24.5982538195379]]]
+    }
+  },
+  "accessPolicy": "SECURE",
+  "resourceType": "MESSAGESTREAM",
+  "iudxResourceAPIs": ["ATTR", "TEMPORAL", "SPATIAL"],
+  "dataDescriptor": {
+    "@context": "[invalid url, do not cite]",
+    "type": ["iudx:DataDescriptor", "iudx:WaterDistributionNetwork"],
+    "dataDescriptorLabel": "Data descriptor for Water Distribution Network in Satna - MLD-18",
+    "description": "Data attribute details for water distribution network measurements in Satna",
+    "deviceName": {
+      "description": "Name of the device measuring the water distribution parameter.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "measurand": {
+      "description": "The parameter being measured by the device.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "deviceStatus": {
+      "description": "Status of the device, including range and condition.",
+      "dataSchema": "iudx:Text",
+      "type": ["ValueDescriptor"]
+    },
+    "deviceMeasure": {
+      "description": "The measured value from the device.",
+      "dataSchema": "iudx:Number",
+      "type": ["ValueDescriptor"]
+    },
+    "observationDateTime": {
+      "description": "The time at which the measurement was taken.",
+      "dataSchema": "iudx:DateTime",
+      "type": ["ValueDescriptor"]
+    },
+    "location": {
+      "description": "The coordinates for the measurement location.",
+      "dataSchema": "iudx:Point",
+      "type": ["ValueDescriptor"]
+    }
+  },
+  "dataSample": {
+    "deviceName": "18MLD.WTP2.PROCESS.CWS_PT_103",
+    "measurand": "CWS PUMP1 O/L PRESSURE TRANSMITTER | Unit: KG/CM2",
+    "deviceStatus": "LOW LOW:2 | Range: 0-10",
+    "deviceMeasure": 0,
+    "observationDateTime": "2024-11-05T15:03:59+05:30",
+    "location": {
+      "coordinates": [80.852842, 24.571722]
+    }
+  },
+  "dataSampleFile": [
+    {
+      "hasObject": "[invalid url, do not cite]/water-distribution-network-mld18.json",
+      "name": "Satna Water Distribution Network MLD-18 Sample",
+      "description": "Sample file for Water Distribution Network measurements in Satna city.",
+      "relationType": "REL_FILE"
+    }
+  ],
+  "instance": "Satna",
+  "itemStatus": "ACTIVE",
+  "cos": "637e32b6-9a6c-396f-914c-9db5d1a222b0",
+  "ownerUserId": "",
+  "itemCreatedAt": "2025-07-09T12:48:00+0530",
+  "provider": "",
+  "resourceServer": "",
+  "resourceGroup": ""
+}

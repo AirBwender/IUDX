@@ -1,0 +1,28 @@
+{
+  "deviceInfo": {
+    "deviceName": "Energy Monitoring",
+    "deviceID": "EM-NC-VN01-00"
+  },
+  "versionInfo": [
+    {
+      "versionSpec": {
+        "frequency": "",
+        "reactiveEnergyLead": "",
+        "reactiveEnergyLag": "",
+        "rssi": "",
+        "phaseCurrent": "",
+        "phaseVoltage": "",
+        "controller": "'Energy API running in a Django application on the Resource Server",
+        "totalActivePower": "",
+        "totalApparentPower": "",
+        "powerFactor": "",
+        "energyConsumed": ""
+      },
+      "comments": "Energy Monitoring",
+      "startDateTime": "2020-08-19T10:00:00+05:30",
+      "endDateTime": "9999-99-99T99:99:99+05:30",
+      "versionName": "V1.00.00"
+    }
+  ],
+  "filename": "iiit_hyderabad_energy_meter_version_info.json"
+}

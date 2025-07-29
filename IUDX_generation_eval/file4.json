@@ -1,0 +1,12 @@
+{
+  "deviceName": "RWPH.RWPH_1.PROCESS.RWPH1_PT_103",
+  "measurand": "PUMP3 OUTLET Pressure Transmitter | Unit: KG/CM2",
+  "deviceStatus": "NORMAL:6-4 | Range: 0-10",
+  "deviceMeasure": 4.4256591797,
+  "observationDateTime": "2024-11-05T15:34:28+05:30",
+  "address": "RWPH1",
+  "location": {
+    "coordinates": [80.89743, 24.55826]
+  },
+  "filename": "satna_water_distribution_network_rwph.json"
+}

@@ -1,0 +1,18 @@
+{
+  "@context": "https://voc.iudx.org.in/",
+  "type": ["iudx:DataDescriptor"],
+  "dataDescriptorLabel": "Location of Temple in Sonipat, Haryana",
+  "description": "Location of Temple in Sonipat district of Haryana",
+  "properties": {
+    "Type_": {
+      "type": ["ValueDescriptor"],
+      "description": "Type of location",
+      "dataSchema": "iudx:Number"
+    },
+    "geometry": {
+      "type": ["ValueDescriptor"],
+      "description": "Geographical representation corresponding to this observation.",
+      "dataSchema": "iudx:Point"
+    }
+  }
+}
